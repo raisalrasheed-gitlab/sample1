@@ -1,86 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation
-    </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
     <style>
-        @keyframes firstanm {
-            from{
-                margin-left:0px;
-            }
-            to{
-                margin-left:1000px;
-            }
-            
+      @keyframes firstanm {
+        from {
+          margin-left: 0px;
         }
-        @keyframes secondanm {
-            from{
-                  margin-left:0px;
-            }
-            to{
-                transform: rotate(360deg);
-            }
-            
+        to {
+          margin-left: 1000px;
         }
-        @keyframes thirdanm {
-            0% {
-                 transform: translate(0,0) rotate(0deg);
-            
-            }
-            25%{
-    
-                transform: translate(400px,0) rotate(360deg);
-                
-                
-            }
-            50% {
-                transform: translate(400px,400px) rotate(0deg);
-                
-            }
-            75%
-            {
-                transform: translate(0px,400px) rotate(360deg);
-             
-            }
-            
-            
+      }
+      @keyframes secondanm {
+        from {
+          margin-left: 0px;
         }
-        .box{
-            width:100px;
-            height:100px;
-            background-color: aqua;
-            animation-name: firstanm;
-            animation-duration: 2s;
-            animation-delay: 2s;
+        to {
+          transform: rotate(360deg);
         }
-        .box1{
-            width:100px;
-            height:100px;
-            background-color: blueviolet;
-            animation-name: secondanm;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-delay: 0s;
-            animation-timing-function: linear;
+      }
+      @keyframes thirdanm {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
         }
-        .box2{
-            width:100px;
-            height:100px;
-            margin-top: 15px;
-            background-color:mediumspringgreen;
-            animation-name: thirdanm;
-            animation-duration: 2s;
-          animation-iteration-count: infinite;
-          animation-timing-function: linear;
-
+        25% {
+          transform: translate(400px, 0) rotate(360deg);
         }
+        50% {
+          transform: translate(400px, 400px) rotate(0deg);
+        }
+        75% {
+          transform: translate(0px, 400px) rotate(360deg);
+        }
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        animation-name: firstanm;
+        animation-duration: 2s;
+        animation-delay: 2s;
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        animation-name: secondanm;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-timing-function: linear;
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        margin-top: 15px;
+        background-color: mediumspringgreen;
+        animation-name: thirdanm;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="box"></div>
     <div class="box1"></div>
     <div class="box2"></div>
-</body>
+    <h2>hello animation</h2>
+  </body>
 </html>
